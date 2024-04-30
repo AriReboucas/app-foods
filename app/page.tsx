@@ -24,6 +24,7 @@ const Home = async () => {
       },
     },
   });
+
   return (
     <div>
       <Header />
