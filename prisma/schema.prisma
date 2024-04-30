@@ -1,5 +1,3 @@
-
-
 generator client {
   provider = "prisma-client-js"
 }
@@ -37,5 +35,5 @@ model Product {
   restaurantId       String
   restaurant         Restaurant @relation(fields: [restaurantId], references: [id])
   categoryId         String
-  category           Category @relation(fields: [categoryId], references: [id])
+  category           Category   @relation(fields: [categoryId], references: [id])
 }
