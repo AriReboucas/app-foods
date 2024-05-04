@@ -13,6 +13,7 @@ import {
   AlertDialogFooter,
   AlertDialogCancel,
   AlertDialogAction,
+  AlertDialogTrigger,
 } from "@/app/_components/ui/alert-dialog";
 import { Button } from "@/app/_components/ui/button";
 import {
@@ -176,6 +177,7 @@ const ProductDetails = ({
         open={isConfirmationDialogOpen}
         onOpenChange={setIsConfirmationDialogOpen}
       >
+        <AlertDialogTrigger />
         <AlertDialogContent>
           <AlertDialogHeader>
             <AlertDialogTitle>
