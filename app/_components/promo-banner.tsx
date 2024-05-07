@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import Image, { ImageProps } from "next/image";
 
 const PromoBanner = (props: ImageProps) => {
@@ -8,7 +9,6 @@ const PromoBanner = (props: ImageProps) => {
       className="h-auto w-full object-contain"
       sizes="100vw"
       quality={100}
-      alt=""
       {...props}
     />
   );
