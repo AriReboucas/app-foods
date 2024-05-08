@@ -91,13 +91,15 @@ const Header = () => {
           </div>
 
           <div className="space-y-2">
-            <Button
-              variant="ghost"
-              className="w-full justify-start space-x-3 rounded-full text-sm font-normal"
-            >
-              <HomeIcon size={16} />
-              <span className="block">Início</span>
-            </Button>
+            <Link href="/">
+              <Button
+                variant="ghost"
+                className="w-full justify-start space-x-3 rounded-full text-sm font-normal"
+              >
+                <HomeIcon size={16} />
+                <span className="block">Início</span>
+              </Button>
+            </Link>
 
             {data?.user && (
               <>
@@ -131,14 +133,18 @@ const Header = () => {
           </div>
 
           {data?.user && (
-            <Button
-              variant="ghost"
-              className="w-full justify-start space-x-3 rounded-full text-sm font-normal "
-              onClick={handleSingOutClick}
-            >
-              <LogOutIcon size={16} />
-              <span className="block">Sair da conta</span>
-            </Button>
+            <div className="absolute bottom-0 left-0 w-full">
+              <div className="px-5 py-3">
+                <Button
+                  variant="ghost"
+                  className="w-full justify-start space-x-3 rounded-full text-sm font-normal "
+                  onClick={handleSingOutClick}
+                >
+                  <LogOutIcon size={16} />
+                  <span className="block">Sair da conta</span>
+                </Button>
+              </div>
+            </div>
           )}
         </SheetContent>
       </Sheet>
