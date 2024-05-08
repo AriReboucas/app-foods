@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# App Foods
 
-## Getting Started
+Projeto de um app de delivery de comidas que combina tecnologias modernas para oferecer uma melhor experiência aos usuários.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- TypeScript
+- React
+- Prisma Schema
+- Neon DB
+- Shadcn e Tailwind
+- Autenticação com o Google (NextAuth.js)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Objetivo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+App de delivery de comidas que combina tecnologias modernas para oferecer uma experiência excepcional aos usuários. Desenvolvido em TypeScript e React, o frontend é estilizado de forma elegante com Shadcn e Tailwind CSS. O backend, construído com Prisma Schema e Neon DB, garante uma interação eficiente com o banco de dados. Além disso, a autenticação integrada com o Google proporciona uma entrada segura e simplificada. Com essa combinação de tecnologias, nosso app promete revolucionar a maneira como as pessoas pedem comida online.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Funcionalidades
 
-## Learn More
+- Busca rápida de restaurantes e produtos
+- Exibição detalhada dos dados do prato e do restaurante
+- Favorite os restaurantes que mais gostar para pedidos futuros
+- Pedidos recomendados com base nos pratos mais pedidos
+- Restaurantes recomendados com base nos mais pedidos
+- Interação com banner de promoções
+- Interface amigável e intuitiva
 
-To learn more about Next.js, take a look at the following resources:
+## Como Utilizar
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+1. Digite o nome do restaurante no campo de busca
+2. Pressione Enter ou clique no botão de busca
+3. Na tela do restaurante, escolha o prato que deseja pedir
+4. Adicione a quantidade de pratos e clique em "Adicionar à sacola"
+5. Escolha outros itens e finalize seu pedido
